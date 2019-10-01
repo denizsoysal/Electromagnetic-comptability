@@ -377,17 +377,17 @@ semilogx(freq,gain_a7)
 xlabel('frequence en [Hz]');
 ylabel('|Hdb| en [dB]')
 title('Courbes configuration A')
-legend('HdbA2','HdbA5','HdbA7','A2 experimental', 'A5 experimental','A7 experimental')
+legend('A2 théorique','A5 théorique','A7 théorique','A2 experimental', 'A5 experimental','A7 experimental')
 
 %% configuration B
 %Résultats expérimentaux
 freq = [10 50 100 500 800 1000 10000 100000 1000000];
 resultats_B2 = [0.76 1.04 1.2 2.2 2.24 2.38 2.32 2.32 2.243];
-gain_B2 = 20*log10(((resultats_B2./5)));
+gain_B2 = 20*2*log10(((resultats_B2./5)));
 resultats_B5 = [0.56 0.64 0.72 1 1.04 1.04 1.16 1.16 1.161];
-gain_B5 = 20*log10(((resultats_B5./5)));
+gain_B5 = 20*2*log10(((resultats_B5./5)));
 resultats_BN = [0.64 0.72 0.72 0.98 1.04 1.02 1 1 1];
-gain_BN = 20*log10(((resultats_BN./5)));
+gain_BN = 20*2*log10(((resultats_BN./5)));
 %courbes
 figure
 semilogx(HdbB2,'b')
@@ -403,7 +403,7 @@ semilogx(freq, gain_BN)
 xlabel('frequence en [Hz]');
 ylabel('|Hdb| en [dB]')
 title('Courbes configuration B')
-legend('HdbB2','HdbB5','HdbBN','B2 experimental', 'B5 experimental','BN experimental')
+legend('B2 théorique','B5 théorique','BN théorique','B2 experimental', 'B5 experimental','BN experimental')
 %% configuration C
 %Résultats expérimentaux
 freq = [10 50 100 500 800 1000 10000 100000 1000000];
@@ -428,7 +428,7 @@ semilogx(freq, gain_CN)
 xlabel('frequence en [Hz]');
 ylabel('|Hdb| en [dB]')
 title('Courbes configuration C')
-legend('HdbC2','HdbC5','HdbCN','C2 experimental', 'C5 experimental','CN experimental')
+legend('C2 théorique','C5 théorique','CN théorique','C2 experimental', 'C5 experimental','CN experimental')
 
 %% configuration D
 %Résultats expérimentaux
@@ -450,7 +450,7 @@ semilogx(freq,gain_DN)
 xlabel('frequence en [Hz]');
 ylabel('|Hdb| en [dB]')
 title('Courbes configuration D')
-legend('HdbD4','HdbDN','D4 experimental', 'DN experimental')
+legend('D4 théorique','DN théorique','D4 experimental', 'DN experimental')
 
 
 %% configuration E
@@ -472,7 +472,6 @@ semilogx(freq,gain_EN)
 xlabel('frequence en [Hz]');
 ylabel('|Hdb| en [dB]')
 title('Courbes configuration E')
-legend('HdbE4','HdbEN','E4 experimental', 'EN experimental')
+legend('E4 théorique','EN théorique','E4 experimental', 'EN experimental')
 % %    
-
 
