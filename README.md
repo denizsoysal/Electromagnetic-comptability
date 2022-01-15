@@ -9,3 +9,7 @@ The main subjects discussed during the labs were :
 * decoupling
 
 The simulations corresponding to these subjects are available in this repo, as well as the lab reports containing the measurements
+
+## Authors
+
+These labs were done in collaboration with Gohi Constant Tie Djé Bi and Salim Seddiki
